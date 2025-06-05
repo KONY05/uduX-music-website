@@ -8,8 +8,8 @@ import Footer from "../../ui/Footer";
 
 function HomePage() {
   return (
-    <div className="text-white">
-      <section
+    <main className="text-white">
+      <div
         style={{
           backgroundColor: "hsla(210, 11%, 7%, 1)",
           backgroundImage:
@@ -21,7 +21,7 @@ function HomePage() {
       >
         <NavBar />
         <HeroSection />
-      </section>
+      </div>
 
       <SectionOne />
 
@@ -32,7 +32,7 @@ function HomePage() {
       <SectionFour />
 
       <Footer/>
-    </div>
+    </main>
   );
 }
 
