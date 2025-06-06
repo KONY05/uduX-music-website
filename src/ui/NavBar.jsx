@@ -55,6 +55,7 @@ function NavBar() {
       </div>
       <hr />
 
+      {/* Mobile Nav */}
       {navClick && (
         <div className="w-full pt-[27px] lg:hidden">
           <nav>
