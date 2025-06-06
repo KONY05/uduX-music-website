@@ -1,3 +1,5 @@
+import TryItNowBtn from "../../ui/TryItNowBtn";
+
 function SectionOne() {
   return (
     <section className="px-4 pt-11 pb-14 text-neutral-950 lg:flex lg:flex-row-reverse lg:px-[60px] lg:gap-36 lg:py-20">
@@ -14,15 +16,12 @@ function SectionOne() {
           the latest Figma features and are synced with the Webflow template.
         </p>
 
-        <span className="font-normal text-[14px] flex align-middle gap-2.5 py-2.5 hover:cursor-pointer lg:text-[17px]">
-          Try it now &rarr;
-        </span>
+        <TryItNowBtn/>
       </div>
 
       <div className="flex justify-center lg:w-full ">
         <div
-          style={{ backgroundColor: "hsla(67, 83%, 68%, 1)" }}
-          className="w-fit"
+          className="w-fit bg-[#E1F16B]"
         >
           <img
             src="section1Img.png"

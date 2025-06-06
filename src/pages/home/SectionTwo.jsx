@@ -1,3 +1,5 @@
+import TryItNowBtn from "../../ui/TryItNowBtn";
+
 function SectionTwo() {
   return (
     <section className="lg:flex">
@@ -21,9 +23,7 @@ function SectionTwo() {
           Figma files can also be downloaded from our store. These files include
           the latest Figma features and are synced with the Webflow template.
         </p>
-        <span className="font-normal text-[14px] flex align-middle gap-2.5 py-2.5 hover:cursor-pointer lg:text-[17px]">
-          Try it now &rarr;
-        </span>
+        <TryItNowBtn/>
       </div>
 
       <div className="flex justify-center py-14 pl-6 pr-[30px] lg:basis-[100%] lg:px-[82px] lg:pt-[134px] lg:pb-[83px] bg-[#111315]">

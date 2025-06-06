@@ -1,3 +1,5 @@
+import TryItNowBtn from "../../ui/TryItNowBtn";
+
 function HeroSection() {
   return (
     <section className="pb-11 lg: md:flex md:pt-5 lg:justify-between xl:pt-11">
@@ -13,9 +15,7 @@ function HeroSection() {
           the latest Figma features and are{" "}
         </p>
 
-        <span className="flex gap-2.5 py-2.5 align-middle text-[14px] font-normal text-[#E1F16B] hover:cursor-pointer">
-          Try it now &rarr;
-        </span>
+        <TryItNowBtn color="text-[#E1F16B]"/>
       </div>
 
       <div className="">

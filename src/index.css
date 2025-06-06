@@ -1,1 +1,137 @@
 @import "tailwindcss";
+
+/* Add this CSS to your stylesheet or in a <style> tag */
+@layer components {
+  @keyframes moveVertical {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-50px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes moveVerticalOpp {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(50px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes moveHorizontal {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(50px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  @keyframes moveHorizontalOpp {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-50px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  /* Mobile animations */
+  .animate-containerOne {
+    animation: moveHorizontal 3s ease-in-out infinite;
+  }
+
+  .animate-containerTwo {
+    animation: moveHorizontalOpp 3s ease-in-out infinite;
+    /* animation-delay: 1.5s; */
+  }
+
+  /* Desktop animations */
+  @media (min-width: 768px) {
+    .animate-containerOne {
+      animation: moveVertical 3s ease-in-out infinite !important;
+    }
+
+    .animate-containerTwo {
+      animation: moveVerticalOpp 3s ease-in-out infinite !important;
+      /* animation-delay: 1.5s; */
+    }
+  }
+
+
+  /* Pulsing Effect */
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+    }
+    70% {
+      box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+  }
+  
+  @keyframes pulseGlow {
+    0%, 100% {
+      box-shadow: 0 -8px 20px rgba(255,255,255,0.1), 0 0 0 0 rgba(255, 255, 255, 0.4);
+    }
+    50% {
+      box-shadow: 0 -8px 20px rgba(255,255,255,0.3), 0 0 0 15px rgba(255, 255, 255, 0.1);
+    }
+  }
+  
+  .pulse-hover {
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .pulse-hover:hover {
+    animation: pulseGlow 1.5s infinite;
+    transform: scale(1.05);
+  }
+  
+  /* Alternative stronger pulse effect */
+  .pulse-hover-strong:hover {
+    animation: pulse 1.5s infinite;
+    transform: scale(1.1);
+  }
+
+
+  /* Arrow shifting */
+
+  @keyframes arrowShift {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(8px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  .arrow-shift {
+    transition: transform 0.3s ease;
+  }
+  
+  .arrow-container:hover .arrow-shift {
+    animation: arrowShift 1s ease-in-out infinite;
+  }
+
+
+}

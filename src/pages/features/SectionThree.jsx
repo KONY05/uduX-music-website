@@ -1,3 +1,5 @@
+import TryItNowBtn from "../../ui/TryItNowBtn";
+
 function SectionThree() {
   return (
     <section className="bg-[#111315] px-4 pt-[38px] pb-[38px] md:mt-[56px] md:flex md:px-[72px] md:pt-[96px] lg:gap-[62px]">
@@ -13,9 +15,7 @@ function SectionThree() {
           Figma files can also be downloaded from our store. These files include
           the latest Figma features and are synced with the Webflow template.
         </p>
-        <span className="flex gap-2.5 py-2.5 align-middle text-[14px] font-normal text-[#E1F16B] hover:cursor-pointer lg:text-[17px]">
-          Try it now &rarr;
-        </span>
+        <TryItNowBtn color="text-[#E1F16B]"/>
       </div>
 
       <div className="pb-[38px] xl:ml-[80px]">

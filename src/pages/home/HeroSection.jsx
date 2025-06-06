@@ -1,3 +1,5 @@
+import TryItNowBtn from "../../ui/TryItNowBtn";
+
 function HeroHome() {
   return (
     <section className="pb-11 lg:pb-0">
@@ -13,12 +15,7 @@ function HeroHome() {
           Figma files can also be downloaded from our store. These files include
           the latest Figma features and are{" "}
         </p>
-
-        <span
-          className="flex gap-2.5 py-2.5 align-middle text-[14px] font-normal hover:cursor-pointer text-[#E1F16B]"
-        >
-          Try it now &rarr;
-        </span>
+        <TryItNowBtn color="text-[#E1F16B]" />
       </div>
 
       <div className="relative">
